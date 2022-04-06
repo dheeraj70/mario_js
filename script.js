@@ -37,42 +37,42 @@ img.onload = function() {
 
     document.addEventListener('keypress', function(e) {
 
-      // if(e.keyCode==32){
-      //   var t=false;
-      //   var jj=0;
-      //   ctx.clearRect(100,200,70,100);
-      //   mario.src="imgs/jump.png"
-      //   var jump = setInterval(function(){
-      //     if(t==false){
-      //       if(jj!=200){
-      //
-      //         if(jj!=0){
-      //           ctx.clearRect(100,200-jj+10,90,100);
-      //         }
-      //
-      //         ctx.drawImage(mario,100,200-jj,90,100);
-      //       jj+=10;}else{t=true}
-      //     }else{
-      //       if(jj>0){
-      //         if(jj!=0){
-      //           ctx.clearRect(100,200-jj-10,90,100);
-      //         }
-      //         ctx.drawImage(mario,100,200-jj,90,100);
-      //       jj-=10;}if(jj==0){
-      //         t=false;
-      //         mario.src="imgs/idle.png"
-      //         clearInterval(jump);
-      //       }
-      //
-      //     }
-      //
-      //
-      //
-      //
-      //   },10);
-      //
-      //
-      // }
+       if(e.keyCode==32){
+         var t=false;
+         var jj=0;
+         ctx.clearRect(100,200,70,100);
+         mario.src="imgs/jump.png"
+         var jump = setInterval(function(){
+           if(t==false){
+             if(jj!=200){
+      
+               if(jj!=0){
+                 ctx.clearRect(100,200-jj+10,90,100);
+               }
+      
+               ctx.drawImage(mario,100,200-jj,90,100);
+             jj+=10;}else{t=true}
+           }else{
+             if(jj>0){
+               if(jj!=0){
+                ctx.clearRect(100,200-jj-10,90,100);
+               }
+               ctx.drawImage(mario,100,200-jj,90,100);
+             jj-=10;}if(jj==0){
+               t=false;
+               mario.src="imgs/idle.png"
+               clearInterval(jump);
+             }
+      
+           }
+      
+      
+      
+      
+        },10);
+      
+      
+       }
 
       if (e.key === 'Enter') {
 
